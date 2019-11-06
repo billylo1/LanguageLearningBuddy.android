@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "627832509678",
+    "firebase_url": "https://homeprice196.firebaseio.com",
+    "project_id": "homeprice196",
+    "storage_bucket": "homeprice196.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627832509678:android:96cbc15f15ffff53620fff",
+        "android_client_info": {
+          "package_name": "com.evergreenlabs.languagebuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627832509678-uikch4qjo8g152aq9qbml3e38aq26f4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-skDQlHJTeFwTnQ0vI-gI2cBa-HqoKfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627832509678-uikch4qjo8g152aq9qbml3e38aq26f4r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "627832509678-428e48a1kib818sj35ggigqkt1n0918q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.katlalabs.homeprice",
+                "app_store_id": "1422456399"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
