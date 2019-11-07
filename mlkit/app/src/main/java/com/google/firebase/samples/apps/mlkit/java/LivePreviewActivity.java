@@ -43,17 +43,9 @@ import com.google.firebase.samples.apps.mlkit.R;
 import com.google.firebase.samples.apps.mlkit.common.CameraSource;
 import com.google.firebase.samples.apps.mlkit.common.CameraSourcePreview;
 import com.google.firebase.samples.apps.mlkit.common.GraphicOverlay;
-import com.google.firebase.samples.apps.mlkit.java.automl.AutoMLImageLabelerProcessor;
-import com.google.firebase.samples.apps.mlkit.java.automl.AutoMLImageLabelerProcessor.Mode;
-import com.google.firebase.samples.apps.mlkit.java.barcodescanning.BarcodeScanningProcessor;
-import com.google.firebase.samples.apps.mlkit.java.custommodel.CustomImageClassifierProcessor;
-import com.google.firebase.samples.apps.mlkit.java.facedetection.FaceContourDetectorProcessor;
-import com.google.firebase.samples.apps.mlkit.java.facedetection.FaceDetectionProcessor;
-import com.google.firebase.samples.apps.mlkit.java.imagelabeling.ImageLabelingProcessor;
-import com.google.firebase.samples.apps.mlkit.java.objectdetection.ObjectDetectorProcessor;
 import com.google.firebase.samples.apps.mlkit.common.preference.SettingsActivity;
 import com.google.firebase.samples.apps.mlkit.common.preference.SettingsActivity.LaunchSource;
-import com.google.firebase.samples.apps.mlkit.java.textrecognition.TextRecognitionProcessor;
+import com.google.firebase.samples.apps.mlkit.java.imagelabeling.ImageLabelingProcessor;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -187,45 +179,9 @@ public final class LivePreviewActivity extends AppCompatActivity
 
         try {
             switch (model) {
-                case CLASSIFICATION_QUANT:
-                    Log.i(TAG, "Using Custom Image Classifier (quant) Processor");
-                    cameraSource.setMachineLearningFrameProcessor(new CustomImageClassifierProcessor(this, true));
-                    break;
-                case CLASSIFICATION_FLOAT:
-                    Log.i(TAG, "Using Custom Image Classifier (float) Processor");
-                    cameraSource.setMachineLearningFrameProcessor(new CustomImageClassifierProcessor(this, false));
-                    break;
-                case TEXT_DETECTION:
-                    Log.i(TAG, "Using Text Detector Processor");
-                    cameraSource.setMachineLearningFrameProcessor(new TextRecognitionProcessor());
-                    break;
-                case FACE_DETECTION:
-                    Log.i(TAG, "Using Face Detector Processor");
-                    cameraSource.setMachineLearningFrameProcessor(new FaceDetectionProcessor(getResources()));
-                    break;
-                case AUTOML_IMAGE_LABELING:
-                    cameraSource.setMachineLearningFrameProcessor(new AutoMLImageLabelerProcessor(this, Mode.LIVE_PREVIEW));
-                    break;
-                case OBJECT_DETECTION:
-                    Log.i(TAG, "Using Object Detector Processor");
-                    FirebaseVisionObjectDetectorOptions objectDetectorOptions =
-                            new FirebaseVisionObjectDetectorOptions.Builder()
-                                    .setDetectorMode(FirebaseVisionObjectDetectorOptions.STREAM_MODE)
-                                    .enableClassification().build();
-                    cameraSource.setMachineLearningFrameProcessor(
-                            new ObjectDetectorProcessor(objectDetectorOptions));
-                    break;
-                case BARCODE_DETECTION:
-                    Log.i(TAG, "Using Barcode Detector Processor");
-                    cameraSource.setMachineLearningFrameProcessor(new BarcodeScanningProcessor());
-                    break;
                 case IMAGE_LABEL_DETECTION:
                     Log.i(TAG, "Using Image Label Detector Processor");
                     cameraSource.setMachineLearningFrameProcessor(new ImageLabelingProcessor());
-                    break;
-                case FACE_CONTOUR:
-                    Log.i(TAG, "Using Face Contour Detector Processor");
-                    cameraSource.setMachineLearningFrameProcessor(new FaceContourDetectorProcessor());
                     break;
                 default:
                     Log.e(TAG, "Unknown model: " + model);

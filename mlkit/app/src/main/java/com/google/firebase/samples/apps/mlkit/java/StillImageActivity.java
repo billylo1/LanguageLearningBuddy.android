@@ -42,9 +42,6 @@ import com.google.firebase.samples.apps.mlkit.R;
 import com.google.firebase.samples.apps.mlkit.common.GraphicOverlay;
 import com.google.firebase.samples.apps.mlkit.common.VisionImageProcessor;
 import com.google.firebase.samples.apps.mlkit.java.cloudimagelabeling.CloudImageLabelingProcessor;
-import com.google.firebase.samples.apps.mlkit.java.cloudlandmarkrecognition.CloudLandmarkRecognitionProcessor;
-import com.google.firebase.samples.apps.mlkit.java.cloudtextrecognition.CloudDocumentTextRecognitionProcessor;
-import com.google.firebase.samples.apps.mlkit.java.cloudtextrecognition.CloudTextRecognitionProcessor;
 import com.google.firebase.samples.apps.mlkit.common.preference.SettingsActivity;
 import com.google.firebase.samples.apps.mlkit.common.preference.SettingsActivity.LaunchSource;
 
@@ -394,15 +391,6 @@ public final class StillImageActivity extends AppCompatActivity {
     switch (selectedMode) {
       case CLOUD_LABEL_DETECTION:
         imageProcessor = new CloudImageLabelingProcessor();
-        break;
-      case CLOUD_LANDMARK_DETECTION:
-        imageProcessor = new CloudLandmarkRecognitionProcessor();
-        break;
-      case CLOUD_TEXT_DETECTION:
-        imageProcessor = new CloudTextRecognitionProcessor();
-        break;
-      case CLOUD_DOCUMENT_TEXT_DETECTION:
-        imageProcessor = new CloudDocumentTextRecognitionProcessor();
         break;
       default:
         throw new IllegalStateException("Unknown selectedMode: " + selectedMode);
