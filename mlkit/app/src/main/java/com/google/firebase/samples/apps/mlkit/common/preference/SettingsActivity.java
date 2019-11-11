@@ -6,6 +6,8 @@ import android.preference.PreferenceFragment;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.evergreenlabs.languagelearningbuddy.R;
+
 
 /**
  * Hosts the preference fragment to configure settings for a demo activity that specified by the

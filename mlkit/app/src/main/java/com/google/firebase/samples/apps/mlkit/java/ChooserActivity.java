@@ -32,6 +32,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.app.ActivityCompat.OnRequestPermissionsResultCallback;
 import androidx.core.content.ContextCompat;
 
+import com.evergreenlabs.languagelearningbuddy.R;
+
 import java.util.ArrayList;
 import java.util.List;
 

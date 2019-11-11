@@ -8,6 +8,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.core.util.Preconditions;
 
+import com.evergreenlabs.languagelearningbuddy.R;
 import com.google.android.gms.common.images.Size;
 import com.google.firebase.ml.vision.face.FirebaseVisionFaceDetectorOptions;
 import com.google.firebase.ml.vision.objects.FirebaseVisionObjectDetectorOptions;

@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.annotation.StringRes;
 
+import com.evergreenlabs.languagelearningbuddy.R;
 import com.google.firebase.samples.apps.mlkit.common.CameraSource;
 import com.google.firebase.samples.apps.mlkit.common.CameraSource.SizePair;
 
