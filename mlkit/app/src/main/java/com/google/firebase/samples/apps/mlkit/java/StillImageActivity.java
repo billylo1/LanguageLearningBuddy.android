@@ -20,7 +20,6 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.util.Pair;
 import android.view.Menu;
@@ -37,13 +36,14 @@ import android.widget.PopupMenu;
 import android.widget.PopupMenu.OnMenuItemClickListener;
 import android.widget.Spinner;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.common.annotation.KeepName;
-import com.google.firebase.samples.apps.mlkit.R;
 import com.google.firebase.samples.apps.mlkit.common.GraphicOverlay;
 import com.google.firebase.samples.apps.mlkit.common.VisionImageProcessor;
-import com.google.firebase.samples.apps.mlkit.java.cloudimagelabeling.CloudImageLabelingProcessor;
 import com.google.firebase.samples.apps.mlkit.common.preference.SettingsActivity;
 import com.google.firebase.samples.apps.mlkit.common.preference.SettingsActivity.LaunchSource;
+import com.google.firebase.samples.apps.mlkit.java.cloudimagelabeling.CloudImageLabelingProcessor;
 
 import java.io.IOException;
 import java.util.ArrayList;

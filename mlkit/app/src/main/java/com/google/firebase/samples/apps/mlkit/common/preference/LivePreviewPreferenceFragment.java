@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import androidx.annotation.StringRes;
 
-import com.google.firebase.samples.apps.mlkit.R;
 import com.google.firebase.samples.apps.mlkit.common.CameraSource;
 import com.google.firebase.samples.apps.mlkit.common.CameraSource.SizePair;
 

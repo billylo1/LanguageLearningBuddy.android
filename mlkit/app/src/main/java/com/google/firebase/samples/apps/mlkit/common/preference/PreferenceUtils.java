@@ -11,7 +11,6 @@ import androidx.core.util.Preconditions;
 import com.google.android.gms.common.images.Size;
 import com.google.firebase.ml.vision.face.FirebaseVisionFaceDetectorOptions;
 import com.google.firebase.ml.vision.objects.FirebaseVisionObjectDetectorOptions;
-import com.google.firebase.samples.apps.mlkit.R;
 import com.google.firebase.samples.apps.mlkit.common.CameraSource;
 import com.google.firebase.samples.apps.mlkit.common.CameraSource.SizePair;
 

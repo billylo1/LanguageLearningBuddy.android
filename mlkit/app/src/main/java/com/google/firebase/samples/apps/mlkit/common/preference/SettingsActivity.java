@@ -6,7 +6,6 @@ import android.preference.PreferenceFragment;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.samples.apps.mlkit.R;
 
 /**
  * Hosts the preference fragment to configure settings for a demo activity that specified by the

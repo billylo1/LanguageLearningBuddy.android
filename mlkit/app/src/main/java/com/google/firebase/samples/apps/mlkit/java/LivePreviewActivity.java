@@ -38,8 +38,6 @@ import androidx.core.app.ActivityCompat.OnRequestPermissionsResultCallback;
 import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.common.annotation.KeepName;
-import com.google.firebase.ml.vision.objects.FirebaseVisionObjectDetectorOptions;
-import com.google.firebase.samples.apps.mlkit.R;
 import com.google.firebase.samples.apps.mlkit.common.CameraSource;
 import com.google.firebase.samples.apps.mlkit.common.CameraSourcePreview;
 import com.google.firebase.samples.apps.mlkit.common.GraphicOverlay;
