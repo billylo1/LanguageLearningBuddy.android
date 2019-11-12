@@ -1,3 +1,4 @@
 
 src/app/google-services.json
 mlkit/app/google-services.json
+*.ser

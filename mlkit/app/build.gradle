@@ -49,14 +49,12 @@ dependencies {
     implementation 'com.google.firebase:firebase-ml-vision:24.0.0'
     // Image Labeling model.
     implementation 'com.google.firebase:firebase-ml-vision-image-label-model:19.0.0'
-    // Face model
-    implementation 'com.google.firebase:firebase-ml-vision-face-model:19.0.0'
-    // Custom model
-    implementation 'com.google.firebase:firebase-ml-model-interpreter:22.0.0'
     // Object model
     implementation 'com.google.firebase:firebase-ml-vision-object-detection-model:19.0.2'
-    // AutoML model
-    implementation 'com.google.firebase:firebase-ml-vision-automl:18.0.2'
+
+    implementation 'com.google.firebase:firebase-ml-natural-language:22.0.0'
+    implementation 'com.google.firebase:firebase-ml-natural-language-translate-model:20.0.7'
+
 
 }
 apply plugin: 'com.google.gms.google-services'
