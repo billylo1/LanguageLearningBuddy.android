@@ -72,6 +72,7 @@ public class ImageLabelingProcessor extends VisionProcessorBase<List<FirebaseVis
         LabelGraphic labelGraphic = new LabelGraphic(graphicOverlay, labels);
         graphicOverlay.add(labelGraphic);
         graphicOverlay.postInvalidate();
+
     }
 
     @Override
