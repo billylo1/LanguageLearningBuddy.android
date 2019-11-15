@@ -2,6 +2,8 @@
 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fireTopLayout"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -9,21 +11,89 @@
     android:background="#000"
     android:keepScreenOn="true">
 
-  <com.google.firebase.samples.apps.mlkit.common.CameraSourcePreview
-      android:id="@+id/firePreview"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_alignParentStart="true"
-      android:layout_alignParentTop="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
 
-      <com.google.firebase.samples.apps.mlkit.common.GraphicOverlay
-          android:id="@+id/fireFaceOverlay"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:layout_alignParentStart="true"
-          android:layout_alignParentTop="true"
-          android:layout_alignParentBottom="true"/>
-  </com.google.firebase.samples.apps.mlkit.common.CameraSourcePreview>
+        <TableLayout
+            android:id="@+id/object_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:showDividers="middle">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Object Name" />
+
+                <TextView
+                    android:id="@+id/translated_text_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中文" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.firebase.samples.apps.mlkit.common.CameraSourcePreview
+        android:id="@+id/firePreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summary"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true">
+
+        <com.google.firebase.samples.apps.mlkit.common.GraphicOverlay
+            android:id="@+id/fireFaceOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
+    </com.google.firebase.samples.apps.mlkit.common.CameraSourcePreview>
 
   <TextView android:id="@+id/text"
       android:layout_width="match_parent"
